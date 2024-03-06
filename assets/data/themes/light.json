@@ -1,0 +1,9 @@
+{
+	"primary_color": "#FFFFFF", 
+	"secondary_color": "#F0F0F0", 
+	"accent_color": "#CCCCCC", 
+	"text_color": "#333333", 
+	"background_color": "#F5F5F5",
+
+	"keysounds": "Alloy"
+}

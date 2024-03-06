@@ -1,0 +1,85 @@
+@import url('assets/fonts/Poppins.css');
+:root {
+	--primary-color: #fff;
+	--secondary-color: #fff;
+	--accent-color: #fff;
+	--text-color: #fff;
+	--background-color: #fff;
+}
+
+body {
+	background-color: var(--background-color);
+  	height: 100%;
+  	width: 100%;
+}
+
+h1 {
+	  color: var(--text-color);
+	  font-family: 'Poppins', sans-serif;
+	  text-decoration: none;
+}
+a {
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+
+div {
+	color: var(--secondary-color);
+}
+
+header {
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	font-family: 'Poppins', sans-serif;
+	padding: 10px;
+	text-align: center;
+}
+
+button {
+	background-color: var(--primary-color);
+
+	color: var(--text-color);
+	padding: 10px 20px;
+	margin: 10px;
+
+	font-family: 'Poppins', sans-serif;
+
+	border-radius: 25px; 
+	border: 2px solid var(--accent-color); 
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color); 
+  border-color: var(--text-color); 
+}
+
+#mainHeader {
+  padding: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: transform 0.25s ease; 
+}
+
+#mainHeader a {
+	font-size: 20px;
+}
+
+.mainHeader-hidden {
+  transform: translateY(-85%);
+}
+
+.headerdiv {
+	display: flex;
+	align-items: center;
+}
+
+.ico {
+  width: 100%;
+  height: auto; 
+}
+

@@ -1,0 +1,10 @@
+{
+	"primary_color": "#400101",
+	"secondary_color": "#8B0000", 
+	"accent_color": "#660000",
+	"text_color": "#FFD700",
+	"background_color": "#230c0c", 
+
+	/* sounds */
+	"keysounds": "Alloy"
+}
