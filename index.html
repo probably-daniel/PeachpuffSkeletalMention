@@ -4,7 +4,7 @@
   <title>Index</title>
   <meta charset="utf-8">
   <link href="assets/fonts/Poppins.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="tyle.css" rel="stylesheet" type="text/css" />
   <script src="assets/data/scripts/readFile.js"></script>
   <script src="assets/data/scripts/theme.js"></script>
 
@@ -25,7 +25,10 @@
 	let timeout;
 
 	const hideHeader = () => {
-	  header.classList.add("mainHeader-hidden");
+	  clearTimeout(timeout);
+	  timeout = setTimeout(() => {
+		header.classList.remove("mainHeader-hidden");
+	  }, 2000); 	
 	};
 
 	const showHeader = () => {
