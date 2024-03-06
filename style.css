@@ -13,15 +13,24 @@ body {
   	width: 100%;
 }
 
+
 h1 {
-	  color: var(--text-color);
-	  font-family: 'Poppins', sans-serif;
-	  text-decoration: none;
+	color: var(--text-color);
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
 }
+
+
 a {
-  color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
+  	color: var(--text-color);
+  	font-family: 'Poppins', sans-serif;
+  	text-decoration: none;
+	transition: transform 0.5s ease-out;
+}
+
+a:hover {
+  	color: var(--accent-color);
+	transform: scale(1.3);
 }
 
 

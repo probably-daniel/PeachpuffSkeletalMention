@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Template</title>
+  <meta charset="utf-8">
+  <link href="../assets/fonts/Poppins.css" rel="stylesheet" type="text/css" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <script src="../assets/data/scripts/readFile.js"></script>
+  <script src="../assets/data/scripts/theme.js"></script>
+
+</head>
+
+<body>
+  <header id="mainHeader">
+		<a id="a:home" href="/">Home</a>
+		<!--<a id="a:about" href="/about" >About</a>-->
+		<a id="a:contact" href="/contact">Contact</a>
+		<a id="a:settings" href="/settings">Settings</a>
+		<button id="hideheader">Hide Header</button>
+  </header>
+
+  <script>
+	const header = document.getElementById("mainHeader");
+	const hideHeaderButton = document.getElementById("hideheader");
+	let timeout;
+
+	const hideHeader = () => {
+	  header.classList.add("mainHeader-hidden");
+	};
+
+	const showHeader = () => {
+	  clearTimeout(timeout);
+	  timeout = setTimeout(() => {
+		header.classList.remove("mainHeader-hidden");
+	  }, 2000); 
+	};
+
+	hideHeaderButton.addEventListener("click", hideHeader);
+
+	header.addEventListener("mouseenter", showHeader);
+	header.addEventListener("mouseleave", hideHeader);
+
+	window.addEventListener("load", hideHeader); 
+  </script>
+
+  <div id="container">
+	<h1>Template</h1>
+  </div>
+</body>
+</html>
