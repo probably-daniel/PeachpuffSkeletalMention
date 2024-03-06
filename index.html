@@ -38,8 +38,10 @@
 	  }, 2000); 
 	};
 
-	hideHeaderButton.addEventListener("click", hideHeader);
-
+	hideHeaderButton.addEventListener("click", () => {
+		header.classList.add("mainHeader-hidden");
+	});
+	  
 	header.addEventListener("mouseenter", showHeader);
 	header.addEventListener("mouseleave", hideHeader);
 
@@ -48,6 +50,21 @@
 
   <div id="container">
 	<h1>Template</h1>
+	  <button id="themeselect">
+		  <option value="default">Default</option>
+		  <option value="light">Light</option>
+		  <option value="dark">Dark</option>
+		  <option value="midnight-purple">Midnight Purple</option>
+		  <option value="blood-maroon">Blood Maroon</option>
+	  </button>
+	  <script>
+		  const element = document.getElementById("themeselect");
+		  element.addEventListener("change", (event) => {
+			  const theme = event.target.value;
+			  applyTheme(theme);
+			  localStorage.setItem("theme", theme);
+		  });
+	  </script>
   </div>
 </body>
 </html>
