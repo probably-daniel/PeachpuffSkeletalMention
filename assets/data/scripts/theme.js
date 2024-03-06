@@ -30,6 +30,7 @@ const applyTheme = (theme_name) => {
 
 const localTheme = localStorage.getItem("theme");
 if (localTheme) {
+	console.log(localTheme)
 	applyTheme(localTheme);
 } else {
 	applyTheme("default");
